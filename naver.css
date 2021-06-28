@@ -2,11 +2,24 @@
 	box-sizing : border-box;
 }
 
-
-div#header-center {
-    margin: 0 auto;
-    width : 1080px
+html, body 
+{
+	/* 웬만하면 이걸 넣고 시작 */
+	margin : 0;
+	padding : 0;
+	font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
 }
+
+/* 왜 가운데정렬용 div 태그를 따로 만들어야 하며 그냥 body에 가운데 정렬 넣으면 되는 거 아닌가? */
+.center-align {
+    margin: 0 auto;
+	width : 1130px;
+}
+
+#header-search {
+	clear : both;
+}
+
 #header-search h2{
     display: none;
 }
@@ -43,18 +56,19 @@ div#header-center {
 	display : inline;
 	padding : 0;
 	margin : 0;
+	position : relative;
 	
 }
 
 #header-search input 
 {
 	width : 444px;
-	height : 24px;
-	padding : 13px 15px 13px 15px;
+	height : 50px;
+	padding : 13px 15px;
 	margin : 1px;
 	border : 0;
 	outline : none;
-	
+	vertical-align : top;
 }
 
 #header-search a, fieldset
@@ -70,6 +84,10 @@ div#header-center {
 	margin : 0px;
 	padding : 0px;
 	border : none;
+	position : absolute;
+	top : -2px;
+	right : -2px; 
+	
 }
 
 
@@ -94,3 +112,123 @@ div#header-center {
     margin: -1px;
     overflow: hidden;
 }
+
+#logo_area {
+	
+	height : 160px;
+}
+
+.list_nav {
+	/* 왜 ul태그에 적용하면 안되고 a태그에 적용해야될까 */
+	list-style : none;
+
+	float : left;
+	font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+	letter-spacing: -.3px;
+	
+	margin : 0;
+	padding : 0;
+	
+
+}
+
+.nav_item {
+	display : inline-block;
+}
+
+#ico_mail {
+	display: inline-block;
+    width: 21px;
+    height: 21px;
+	background-image : url(sp_main_4efc7a.png);
+	background-position : -48px -386px;
+	background-size: 440px 408px;
+	margin: 3px 9px 0 0;
+	vertical-align: top;
+
+
+}
+
+.nav {
+	/* 왜 해줘야 하는 거지 */
+	display : block;
+	color: #03c75a;
+	text-decoration: none;
+	
+}
+
+.nav_item {
+	margin-left: 12px;
+	
+}
+
+#service_area {
+	float : right;
+}
+
+#service_area a:first-child {
+	font-size: 11px;
+    color: #404040;
+	text-decoration: none;
+	
+}
+
+
+.border {
+	border-bottom: 1px solid #e4e8eb;
+}
+
+#group_nav {
+	padding: 11px 270px 11px 0;
+	overflow : hidden;
+}
+
+#gnb {
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);	
+}
+
+#ke_kbd_btn {
+    position: absolute;
+    top: 0;
+    right: 84px;
+    bottom: 0;
+    width: 36px;
+    z-index: 400;
+}
+
+#ico_keyboard {
+	/* 어떻게 height가 생긴거지 */
+	display : inline-block;
+	background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_4efc7a.png);
+    background-size: 440px 408px;
+	background-position: -420px -267px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 12px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -10px; 
+	vertical-align: top;
+}
+
+#ico_arr {
+	background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_4efc7a.png);
+    background-size: 440px 408px;	
+	background-position: -170px -151px;
+    background-repeat: no-repeat;
+	display : inline-block;
+    width: 10px;
+    height: 5px;
+	position: absolute;
+    right: 68px;
+    bottom: 50%;
+
+	
+}
+
+
+
+
