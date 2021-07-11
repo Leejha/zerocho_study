@@ -1,158 +1,257 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="utf-8">
-    <title> NAVER </title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="naver.css">
-</head>
-<body>
-	<header class = 'border'>
-		<div id = logo_area  class = 'center-align'>
-			<div id="service_area">  
-				<a href="https://help.naver.com/support/welcomePage/guide.help"> 네이버를 시작페이지로 </a>
-				<a href="https://jr.naver.com"> 쥬니어네이버 </a>
-				<a href="https://happybean.naver.com"> 해피빈 </a>
-			</div>
-
-			<div id = 'header-search'>
-				<a href = 'https://www.naver.com/'> 
-					<h1>
-						<span class = 'blind'>
-							네이버
-						</span>
-					</h1>
-				</a>
-				<!-- 왜 form태그의 크기는 fieldset의 크기로 맞춰지지 않는가 -->
-				<form>	
-					<fieldset>
-						<legend class = 'blind'> 검색 </legend>
-						<select name = '몰라' class = 'blind'>
-							<option  value="a" selected> 통합검색 </option>
-							<option value="b" > b </option>
-						</select>
-						<input>
-						<!-- 어떻게 height 값을 준거지 -->
-						<a id = "ke_kbd_btn">
-							<span class = 'blind'> 한글 입력기 </span>
-							<span id = "ico_keyboard" > </span>
-						</a>
-						<a id="nautocomplete">
-							<span class = 'blind'> 자동 완성 레이어</span>
-							<span id = "ico_arr" > </span>
-						</a>
-						<button>
-							<span class = 'blind'> 검색 </span>
-							<span id = 'ico_search_submit'> </span>
-						</button>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		</header>
-		<nav id = 'gnb'>
-			
-				<div class = 'center-align'>	
-					<div id = 'group_nav'>
-						<ul class = "list_nav" >
-							<li class = 'nav_item'> 
-								<a href="https://mail.naver.com/" class="nav">
-									<!-- css 속성을 하나만 적용하는데 id가 아니라 class를 쓰는 이유가 뭘까 -->
-									<i id = "ico_mail"></i>
-										메일 
-								</a>
-							</li>
-
-							<li class = 'nav_item'>
-								<a href="https://section.cafe.naver.com/" class="nav">
-									카페 
-								</a>
-							</li>
-
-							<li class = 'nav_item'> 
-								<a href="https://section.blog.naver.com/"class="nav"> 
-									블로그 
-								</a>
-							</li>
-
-							<li class = 'nav_item'> 
-								<a href="https://kin.naver.com/"class="nav"> 
-									지식in
-								</a>
-							</li>
-
-							<li class = 'nav_item'> 
-								<a href="https://shopping.naver.com/"class="nav"> 
-									쇼핑 
-								</a>
-							</li>
-
-							<li class = 'nav_item'> 
-								<a href="https://shoppinglive.naver.com/home"class="nav"> 
-									쇼핑LIVE
-								</a>
-							</li>	
-
-							<li class = 'nav_item'> 
-								<a href="https://shoppinglive.naver.com/home"class="nav">
-									Pay 
-								</a>
-							</li>
-
-							<li class = 'nav_item'> 
-								<a href="https://tv.naver.com/"class="nav"> 
-									TV
-								</a>
-							</li>
-						</ul>
-						<ul class = "list_nav">
-							<li class = 'nav_item'> 사전 </li>
-							<li class = 'nav_item'> 뉴스 </li>
-							<li class = 'nav_item'> 증권 </li>
-							<li class = 'nav_item'> 부동산 </li>
-							<li class = 'nav_item'> 지도 </li>
-							<li class = 'nav_item'> 영화 </li>
-							<li class = 'nav_item'> VIBE </li>
-							<li class = 'nav_item'> 책 </li>
-							<li class = 'nav_item'> 웹툰 </li>
-						</ul>
-					</div>	
+	<head>
+		<meta charset="utf-8" />
+		<title>NAVER</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="naver.css" />
+	</head>
+	<body>
+		<header class="border">
+			<div id="logo_area" class="center-align">
+				<div id="service_area">
+					<a href="https://help.naver.com/support/welcomePage/guide.help">
+						네이버를 시작페이지로
+					</a>
+					<a href="https://jr.naver.com"> 쥬니어네이버 </a>
+					<a href="https://happybean.naver.com"> 해피빈 </a>
 				</div>
+
+				<div id="header-search">
+					<a href="https://www.naver.com/">
+						<h1>
+							<span class="blind">
+								네이버
+							</span>
+						</h1>
+					</a>
+					<!-- 왜 form태그의 크기는 fieldset의 크기로 맞춰지지 않는가 -->
+					<form>
+						<fieldset>
+							<legend class="blind">검색</legend>
+							<select name="몰라" class="blind">
+								<option value="a" selected> 통합검색 </option>
+								<option value="b"> b </option>
+							</select>
+							<input />
+							<!-- 어떻게 height 값을 준거지 -->
+							<a id="ke_kbd_btn">
+								<span class="blind"> 한글 입력기 </span>
+								<span id="ico_keyboard"> </span>
+							</a>
+							<a id="nautocomplete">
+								<span class="blind"> 자동 완성 레이어</span>
+								<span id="ico_arr"> </span>
+							</a>
+							<button>
+								<span class="blind"> 검색 </span>
+								<span id="ico_search_submit"> </span>
+							</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</header>
+		<nav id="gnb">
+			<div class="center-align">
+				<div id="group_nav">
+					<ul class="list_nav">
+						<li class="nav_item">
+							<a href="https://mail.naver.com/" class="nav">
+								<!-- css 속성을 하나만 적용하는데 id가 아니라 class를 쓰는 이유가 뭘까 -->
+								<i id="ico_mail"></i>
+								메일
+							</a>
+						</li>
+
+						<li class="nav_item">
+							<a href="https://section.cafe.naver.com/" class="nav">
+								카페
+							</a>
+						</li>
+
+						<li class="nav_item">
+							<a href="https://section.blog.naver.com/" class="nav">
+								블로그
+							</a>
+						</li>
+
+						<li class="nav_item">
+							<a href="https://kin.naver.com/" class="nav">
+								지식in
+							</a>
+						</li>
+
+						<li class="nav_item">
+							<a href="https://shopping.naver.com/" class="nav">
+								쇼핑
+							</a>
+						</li>
+
+						<li class="nav_item">
+							<a href="https://shoppinglive.naver.com/home" class="nav">
+								쇼핑LIVE
+							</a>
+						</li>
+
+						<li class="nav_item">
+							<a href="https://shoppinglive.naver.com/home" class="nav">
+								Pay
+							</a>
+						</li>
+
+						<li class="nav_item">
+							<a href="https://tv.naver.com/" class="nav">
+								TV
+							</a>
+						</li>
+					</ul>
+					<ul class="list_nav">
+						<li class="nav_item">사전</li>
+						<li class="nav_item">뉴스</li>
+						<li class="nav_item">증권</li>
+						<li class="nav_item">부동산</li>
+						<li class="nav_item">지도</li>
+						<li class="nav_item">영화</li>
+						<li class="nav_item">VIBE</li>
+						<li class="nav_item">책</li>
+						<li class="nav_item">웹툰</li>
+					</ul>
+					<div id="search-ranking">
+						실시간 랭킹
+					</div>
+				</div>
+			</div>
 		</nav>
 
-		<main id="container">
-			<div>
-				<div>
-					<div>
-						광고
+		<main id="container" class="center-align">
+			<div id="left">
+				<div id="first_ad">
+					광고
+				</div>
+				<div id="newsstand">
+					<h2 class="blind">뉴스스탠드</h2>
+					<div id="NEWSSTAND_HEADER">
+						<div id="issue_area">
+							<a id="link_media">
+								연합뉴스
+							</a>
+							<a id="issue">
+								속보) 이거 언제 끝내나
+							</a>
+							<div id="direct_area">
+								<a href="http://news.naver.com/" id="link_news">네이버뉴스</a>
+								<a href="http://entertain.naver.com/home" class="link_direct"
+									>연예</a
+								>
+								<a href="http://sports.news.naver.com/" class="link_direct"
+									>스포츠</a
+								>
+								<a
+									href="http://news.naver.com/main/main.nhn?mode=LSD&amp;mid=shm&amp;sid1=101"
+									class="link_direct"
+									>경제</a
+								>
+							</div>
+						</div>
 					</div>
-					<div>
-						로그인
-					</div>	
-				</div>
-				<div>
-					<div> 연합뉴스 </div>
-					<div>  이슈 증시</div>
-				</div>
-			</div>
-			
-			<h2> 뉴스스탠드 </h2>
-			<ul>
-				<img src = '092.png' ZD Net Korea >
-				<img src = '293.png' BLOTER >
-				<img src = '422.png' 연합뉴스TV >
+					<div id="NM_NEWSSTAND_TITLE">
+						<a href="http://newsstand.naver.com/" class="link_newsstand">
+							뉴스스탠드
+						</a>
+						<div id="NM_NEWSSTAND_data_buttons">
+							<a> 구독한 언론사</a>
+							<a> 전체 언론사</a>
+						</div>
+					</div>
+					<ul>
+						<li>
+							<img src="092.png" ZD Net Korea />
+						</li>
+						<li>
+							<img src="293.png" BLOTER />
+						</li>
+						<li>
+							<img src="002.png" />
+						</li>
+						<li>
+							<img src="003.png" />
+						</li>
+						<li>
+							<img src="005.png" />
+						</li>
+						<li>
+							<img src="006.png" />
+						</li>
+						<li>
+							<img src="008.png" />
+						</li>
+						<li>
+							<img src="009.png" />
+						</li>
+						<li>
+							<img src="011.png" />
+						</li>
+						<li>
+							<img src="014.png" />
+						</li>
+						<li>
+							<img src="015.png" />
+						</li>
+						<li>
+							<img src="016.png" />
+						</li>
+						<li>
+							<img src="018.png" />
+						</li>
+						<li>
+							<img src="020.png" />
+						</li>
+						<li>
+							<img src="021.png" />
+						</li>
 
-			</ul>
+						<li>
+							<img src="022.png" />
+						</li>
+						<li>
+							<img src="025.png" />
+						</li>
+						<li>
+							<img src="028.png" />
+						</li>
+					</ul>
+				</div>
+
+				<h2 class="blind">주제별 캐스트</h2>
+			</div>
+
+			<div id="right">
+				<div id="account">
+					<h2 class="blind">로그인</h2>
+					로그인
+				</div>
+				<div id="timesquare">
+					<h2 class="blind">타임스퀘어</h2>
+					timesquare
+				</div>
+				<div id="branding">
+					<iframe
+						src="https://siape.veta.naver.com/fxshow?su=SU10601&nrefreshx=0"
+						scrolling="no"
+						frameborder="0"
+					>
+					</iframe>
+				</div>
+				<div id="shopcast"></div>
+			</div>
 		</main>
 
-
-		<footer>
-			<h5> 공지사항 </h5>
-			<h5> Creators </h5>
-			<h5> partners </h5>
-			<h5> Developers </h5>
-
+		<footer id="footer">
+			<h5>공지사항</h5>
+			<h5>Creators</h5>
+			<h5>partners</h5>
+			<h5>Developers</h5>
 		</footer>
-
 	</body>
 </html>
