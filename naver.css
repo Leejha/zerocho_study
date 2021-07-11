@@ -1,180 +1,159 @@
 * {
-	box-sizing : border-box;
+	box-sizing: border-box;
 }
 
-html, body 
-{
+html,
+body {
 	/* 웬만하면 이걸 넣고 시작 */
-	margin : 0;
-	padding : 0;
-	font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', helvetica,
+		'Apple SD Gothic Neo', sans-serif;
 }
+
+/* h1, h2, h3, h4, h5, h6 {
+	margin : 0;
+} */
 
 /* 왜 가운데정렬용 div 태그를 따로 만들어야 하며 그냥 body에 가운데 정렬 넣으면 되는 거 아닌가? */
 .center-align {
-    margin: 0 auto;
-	width : 1130px;
+	margin: 0 auto;
+	width: 1190px;
 }
 
 #header-search {
-	clear : both;
+	clear: both;
 }
 
-#header-search h2{
-    display: none;
+#header-search h2 {
+	display: none;
 }
 
-#header-search h1{
-    width: 198px;
-	height : 48px;
-    display: inline-block;
-	background-image : url(sp_search.png);
-	background-position : -4px -10px;
-	background-repeat : no-repeat;
-	text-indent : 35%;
-	text-decoration : none;
-	vertical-align: middle
-	
-
+#header-search h1 {
+	width: 198px;
+	height: 48px;
+	display: inline-block;
+	background-image: url(sp_search.png);
+	background-position: -4px -10px;
+	background-repeat: no-repeat;
+	text-indent: 35%;
+	vertical-align: middle;
 }
 
-#header-search a {
-	text-decoration : none;
-}
-
-#header-search form{
-    /* width: 520px; */
-    display: inline-block;
+#header-search form {
+	/* width: 520px; */
+	display: inline-block;
 	/* vertical-align : middle; */
 }
 
 #header-search fieldset {
-	width : 586px;
-	height : 56px;
-	border : 2px solid #19ce60;
-	margin-left : 20px;
-	display : inline;
-	padding : 0;
-	margin : 0;
-	position : relative;
-	
+	width: 586px;
+	height: 56px;
+	border: 2px solid #19ce60;
+	margin-left: 20px;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 
-#header-search input 
-{
-	width : 444px;
-	height : 50px;
-	padding : 13px 15px;
-	margin : 1px;
-	border : 0;
-	outline : none;
-	vertical-align : top;
+#header-search input {
+	width: 444px;
+	height: 50px;
+	padding: 13px 15px;
+	margin: 1px;
+	border: 0;
+	outline: none;
+	vertical-align: top;
 }
 
-#header-search a, fieldset
-{
-	vertical-align : middle;
+#header-search a,
+fieldset {
+	vertical-align: middle;
 }
 
-#header-search button 
-{
-	background-color : #19ce60;
-	width : 56px;
-	height : 56px;
-	margin : 0px;
-	padding : 0px;
-	border : none;
-	position : absolute;
-	top : -2px;
-	right : -2px; 
-	
+#header-search button {
+	background-color: #19ce60;
+	width: 56px;
+	height: 56px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	position: absolute;
+	top: -2px;
+	right: -2px;
 }
 
-
-#ico_search_submit
-{
-	display : inline-block;
+#ico_search_submit {
+	display: inline-block;
 	width: 22px;
 	height: 22px;
-	background-image : url(sp_main_4efc7a.png);
-	background-position : 0 -386px;
-	background-size : 404px 408px;
-	background-repeat : no-repeat;
+	background-image: url(sp_main_4efc7a.png);
+	background-position: 0 -386px;
+	background-size: 404px 408px;
+	background-repeat: no-repeat;
 }
 
-
-
 .blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
 }
 
 #logo_area {
-	
-	height : 160px;
+	height: 160px;
 }
 
 .list_nav {
 	/* 왜 ul태그에 적용하면 안되고 a태그에 적용해야될까 */
-	list-style : none;
+	list-style: none;
 
-	float : left;
+	float: left;
 	font-size: 15px;
-    line-height: 30px;
-    font-weight: 700;
-	letter-spacing: -.3px;
-	
-	margin : 0;
-	padding : 0;
-	
+	line-height: 30px;
+	font-weight: 700;
+	letter-spacing: -0.3px;
 
+	margin: 0;
+	padding: 0;
 }
 
 .nav_item {
-	display : inline-block;
+	display: inline-block;
 }
 
 #ico_mail {
 	display: inline-block;
-    width: 21px;
-    height: 21px;
-	background-image : url(sp_main_4efc7a.png);
-	background-position : -48px -386px;
+	width: 21px;
+	height: 21px;
+	background-image: url(sp_main_4efc7a.png);
+	background-position: -48px -386px;
 	background-size: 440px 408px;
 	margin: 3px 9px 0 0;
 	vertical-align: top;
-
-
 }
 
 .nav {
 	/* 왜 해줘야 하는 거지 */
-	display : block;
+	display: block;
 	color: #03c75a;
-	text-decoration: none;
-	
 }
 
 .nav_item {
 	margin-left: 12px;
-	
 }
 
 #service_area {
-	float : right;
+	float: right;
 }
 
 #service_area a:first-child {
 	font-size: 11px;
-    color: #404040;
-	text-decoration: none;
-	
+	color: #404040;
 }
-
 
 .border {
 	border-bottom: 1px solid #e4e8eb;
@@ -182,53 +161,232 @@ html, body
 
 #group_nav {
 	padding: 11px 270px 11px 0;
-	overflow : hidden;
+	overflow: hidden;
+	position: relative;
 }
 
 #gnb {
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);	
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 #ke_kbd_btn {
-    position: absolute;
-    top: 0;
-    right: 84px;
-    bottom: 0;
-    width: 36px;
-    z-index: 400;
+	position: absolute;
+	top: 0;
+	right: 84px;
+	bottom: 0;
+	width: 36px;
+	z-index: 400;
 }
 
 #ico_keyboard {
 	/* 어떻게 height가 생긴거지 */
-	display : inline-block;
+	display: inline-block;
 	background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_4efc7a.png);
-    background-size: 440px 408px;
+	background-size: 440px 408px;
 	background-position: -420px -267px;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 12px;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 12px;
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -6px 0 0 -10px; 
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -10px;
 	vertical-align: top;
 }
 
 #ico_arr {
 	background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_4efc7a.png);
-    background-size: 440px 408px;	
+	background-size: 440px 408px;
 	background-position: -170px -151px;
-    background-repeat: no-repeat;
-	display : inline-block;
-    width: 10px;
-    height: 5px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 10px;
+	height: 5px;
 	position: absolute;
-    right: 68px;
-    bottom: 50%;
-
-	
+	right: 68px;
+	bottom: 50%;
 }
 
+#search-ranking {
+	position: absolute;
+	right: 30px;
+	width: 198px;
+	height: 20px;
+}
 
+#container {
+	padding: 20px 30px;
+	overflow: hidden;
+	letter-spacing: -0.2px;
+}
 
+#left {
+	float: left;
+	width: 750px;
+	display: block;
+}
 
+#first_ad {
+	width: 750px;
+	height: 135px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid grey;
+}
+
+#account {
+	width: 350px;
+	height: 135px;
+	display: inline-block;
+	padding: 16px 16px 12px 17px;
+	background-color: #f7f9fa;
+	border: 1px solid #dae1e6;
+	vertical-align: top;
+	/* float : right; */
+}
+
+#newsstand {
+	clear: both;
+	margin-top: 12px;
+}
+
+#NEWSSTAND_HEADER {
+	padding: 12px 15px 11px 15px;
+	background-color: #f7f9fa;
+	border: 1px solid #dae1e6;
+	line-height: 24px;
+}
+
+#link_media {
+	/* 왜 굳이 float left를 해주는 거지 그냥 display block만 빼는 게 더 간단한 것 같은데 */
+	float: left;
+	margin-right: 7px;
+	font-size: 13px;
+	color: #000;
+	font-weight: 700;
+}
+
+#issue {
+	width: 310px;
+	height: 24px;
+	font-size: 13px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+
+#direct_area {
+	float: right;
+	font-weight: 700;
+	height: 24px;
+	font-size: 13px;
+
+	margin: 0 4px 0 7px;
+	color: #202020;
+}
+
+#link_news {
+	color: #3565c9;
+}
+.link_direct {
+	margin: 0 4px 0 7px;
+	color: #202020;
+}
+#header-search h1,
+#header-search a,
+.nav,
+#service_area a:first-child,
+#link_media,
+#link_news,
+.link_direct,
+.link_newsstand {
+	text-decoration: none;
+}
+
+#NM_NEWSSTAND_TITLE {
+	padding: 22px 0 16px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.link_newsstand {
+	color: #000;
+	font-weight: 700;
+	white-space: nowrap;
+	display: inline-block;
+}
+.link_newsstand:before {
+	display: inline-block;
+	width: 27px;
+	height: 24px;
+	background-position: -228px -296px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	content: '';
+	margin: -6px 1px 0 0;
+	background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_4efc7a.png);
+	background-size: 440px 408px;
+}
+
+.link_newsstand:after {
+	display: inline-block;
+	width: 7px;
+	height: 11px;
+	background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_4efc7a.png);
+	background-size: 440px 408px;
+	background-position: -410px -213px;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	content: '';
+	margin-left: 6px;
+	vertical-align: -1px;
+}
+
+#NM_NEWSSTAND_data_buttons {
+	display: inline-block;
+}
+
+#newsstand ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+#newsstand ul li {
+	/* display : inline-block; */
+	float: left;
+	width: calc(100% / 6);
+	height: 67px;
+	text-align: center;
+	border: 1px solid #f1f3f6;
+}
+
+#newsstand ul li img {
+	/* margin : 0 auto;가 자식이 부모기준으로 가운데 정렬이라는데 왜 안먹히지? */
+	height: 20px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#right {
+	float: right;
+}
+
+#timesquare {
+	/* position: relative; */
+	height: 47px;
+	margin: 12px 0;
+	border: 1px solid #dae1e6;
+	letter-spacing: -0.25px;
+}
+
+#branding iframe {
+	width: 350px;
+	height: 200px;
+	border: 0px;
+}
+
+#footer {
+	clear: both;
+}
